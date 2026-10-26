@@ -1,0 +1,1368 @@
+{
+    "Result": {
+        "ResponseStatus": {
+            "IsSuccess": true,
+            "Errors": [],
+            "SuccessEntitys": [],
+            "SuccessMessages": [],
+            "MsgCode": 0
+        },
+        "NeedReturnData": {
+            "Id": "STK_Inventory",
+            "Name": [
+                {
+                    "Key": 2052,
+                    "Value": "即时库存"
+                },
+                {
+                    "Key": 1033,
+                    "Value": "Real-time Inventory"
+                }
+            ],
+            "Entrys": [
+                {
+                    "Id": "08925b90-ef3a-4425-bdfb-29ed36abd740",
+                    "Key": "FBillHead",
+                    "Name": [
+                        {
+                            "Key": 2052,
+                            "Value": "即时库存"
+                        },
+                        {
+                            "Key": 1033,
+                            "Value": "Real-time Inventory"
+                        }
+                    ],
+                    "TableName": "T_STK_INVENTORY",
+                    "ParentKey": null,
+                    "EntryName": "Inventory",
+                    "EntryPkFieldName": "FID",
+                    "PkFieldType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+                    "Fields": [
+                        {
+                            "Key": "FStockId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "仓库编码"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Warehouse Code "
+                                }
+                            ],
+                            "FieldName": "FSTOCKID",
+                            "PropertyName": "StockID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 13,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_STOCK",
+                            "LookUpObjectID": "6c2607c8-efed-4047-b463-a10b4f054a7a",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FKeeperId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "保管者编码"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Code of Keeper"
+                                }
+                            ],
+                            "FieldName": "FKEEPERID",
+                            "PropertyName": "KeeperID",
+                            "FieldType": 56,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 16,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BOS_ItemClass",
+                            "LookUpObjectID": "BOS_ItemClass",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": "FKeeperTypeId",
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FOwnerId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "货主编码"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Owner Code"
+                                }
+                            ],
+                            "FieldName": "FOWNERID",
+                            "PropertyName": "OwnerId",
+                            "FieldType": 56,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 16,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BOS_ItemClass",
+                            "LookUpObjectID": "BOS_ItemClass",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": "FOwnerTypeId",
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FKeeperTypeId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "保管者类型"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Type of Keeper"
+                                }
+                            ],
+                            "FieldName": "FKEEPERTYPEID",
+                            "PropertyName": "KeeperTypeId",
+                            "FieldType": 231,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 9,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": [
+                                {
+                                    "Value": "BD_KeeperOrg",
+                                    "Caption": "业务组织",
+                                    "Seq": 0,
+                                    "Invalid": false
+                                },
+                                {
+                                    "Value": "BD_Supplier",
+                                    "Caption": "供应商",
+                                    "Seq": 0,
+                                    "Invalid": false
+                                },
+                                {
+                                    "Value": "BD_Customer",
+                                    "Caption": "客户",
+                                    "Seq": 0,
+                                    "Invalid": false
+                                }
+                            ],
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "BD_KeeperOrg",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "5"
+                        },
+                        {
+                            "Key": "FMaterialId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "物料编码"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Material Code"
+                                }
+                            ],
+                            "FieldName": "FMATERIALID",
+                            "PropertyName": "MaterialID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 13,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_MATERIAL",
+                            "LookUpObjectID": "624b39cf-5504-42e0-9124-7d75e64a05f1",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FOwnerTypeId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "货主类型"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Type of Owner"
+                                }
+                            ],
+                            "FieldName": "FOWNERTYPEID",
+                            "PropertyName": "OwnerTypeId",
+                            "FieldType": 231,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 9,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": [
+                                {
+                                    "Value": "BD_OwnerOrg",
+                                    "Caption": "业务组织",
+                                    "Seq": 0,
+                                    "Invalid": false
+                                },
+                                {
+                                    "Value": "BD_Supplier",
+                                    "Caption": "供应商",
+                                    "Seq": 0,
+                                    "Invalid": false
+                                },
+                                {
+                                    "Value": "BD_Customer",
+                                    "Caption": "客户",
+                                    "Seq": 0,
+                                    "Invalid": false
+                                }
+                            ],
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "BD_OwnerOrg",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "5"
+                        },
+                        {
+                            "RelatedBaseDataFlexGroupField": "FStockId",
+                            "RelatedBDFlexGroupLinkField": "FLocationScheme",
+                            "RelatedBDFlexItemLinkField": "BD_FLEXVALUESDETAIL",
+                            "FlexDisplayFormat": 1,
+                            "FlexFields": [
+                                {
+                                    "Key": "FSTOCKLOCID__FF100001",
+                                    "FieldName": "FF100001",
+                                    "PropertyName": "F100001",
+                                    "FieldType": 127,
+                                    "ElementType": 13,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_FLEXVALUE_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "通用仓位"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Key": "FSTOCKLOCID__FF100030",
+                                    "FieldName": "FF100030",
+                                    "PropertyName": "F100030",
+                                    "FieldType": 127,
+                                    "ElementType": 13,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_FLEXVALUE_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "江苏样品研发线"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Key": "FStockLocId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "仓位"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Bin"
+                                }
+                            ],
+                            "FieldName": "FSTOCKLOCID",
+                            "PropertyName": "StockLocId",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 60523,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 50,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FStockOrgId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存组织"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Inventory Org."
+                                }
+                            ],
+                            "FieldName": "FSTOCKORGID",
+                            "PropertyName": "StockOrgID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 7,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "ORG_Organizations",
+                            "LookUpObjectID": "3f8da3f4-fe84-4456-9548-7c2c38b7c57f",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0,20"
+                        },
+                        {
+                            "Key": "FBaseUnitId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "基本单位"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "BUoM"
+                                }
+                            ],
+                            "FieldName": "FBASEUNITID",
+                            "PropertyName": "BaseUnitID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 46,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_UNIT",
+                            "LookUpObjectID": "e6213815-6b93-4cff-83bf-f26f807b7f4d",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": "FMaterialId",
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FSecUnitId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存辅单位"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "SKU (AUoM)"
+                                }
+                            ],
+                            "FieldName": "FSECUNITID",
+                            "PropertyName": "SecUnitID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 46,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_UNIT",
+                            "LookUpObjectID": "e6213815-6b93-4cff-83bf-f26f807b7f4d",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": "FMaterialId",
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FStockUnitId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存主单位"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Stock Unit (CUoM)"
+                                }
+                            ],
+                            "FieldName": "FSTOCKUNITID",
+                            "PropertyName": "StockUnitID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 46,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_UNIT",
+                            "LookUpObjectID": "e6213815-6b93-4cff-83bf-f26f807b7f4d",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": "FMaterialId",
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FLot",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "批号"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Lot No."
+                                }
+                            ],
+                            "FieldName": "FLOT",
+                            "PropertyName": "Lot",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 13,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_BatchMainFile",
+                            "LookUpObjectID": "bfe38f78-e681-4021-bf06-47f8a77cc156",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FProjectNo",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "项目编号"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Item No."
+                                }
+                            ],
+                            "FieldName": "FPROJECTNO",
+                            "PropertyName": "ProjectNo",
+                            "FieldType": 231,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 1,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": false,
+                            "IsEditLock": false,
+                            "Editlen": 50,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FLockQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "预留量(主单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Reserved Qty (CUoM)"
+                                }
+                            ],
+                            "FieldName": "FLOCKQTY",
+                            "PropertyName": "LockQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 22,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": false,
+                            "IsEditLock": false,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FSecLockQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "预留量(辅单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Reserved Qty (AUoM)"
+                                }
+                            ],
+                            "FieldName": "FSECLOCKQTY",
+                            "PropertyName": "SecLockQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 22,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": false,
+                            "IsEditLock": false,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FBaseQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存量(基本单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Inventory Qty (BUoM)"
+                                }
+                            ],
+                            "FieldName": "FBASEQTY",
+                            "PropertyName": "FBaseQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 47,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存量(主单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Inventory Qty  (CUoM)"
+                                }
+                            ],
+                            "FieldName": "FQTY",
+                            "PropertyName": "FQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 22,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FMtoNo",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "计划跟踪号"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Plan Tracking No."
+                                }
+                            ],
+                            "FieldName": "FMTONO",
+                            "PropertyName": "MtoNo",
+                            "FieldType": 231,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 1,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 255,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FBaseLockQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "预留量(基本单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Reserved Qty (BUoM)"
+                                }
+                            ],
+                            "FieldName": "FBASELOCKQTY",
+                            "PropertyName": "BaseLockQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 47,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FProduceDate",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "生产日期"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Production Date"
+                                }
+                            ],
+                            "FieldName": "FPRODUCEDATE",
+                            "PropertyName": "ProduceDate",
+                            "FieldType": 61,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 4,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "2"
+                        },
+                        {
+                            "RelatedBaseDataFlexGroupField": "FMaterialID",
+                            "RelatedBDFlexGroupLinkField": null,
+                            "RelatedBDFlexItemLinkField": "BD_FLEXSITEMDETAILV",
+                            "FlexDisplayFormat": 2,
+                            "FlexFields": [
+                                {
+                                    "Key": "FAUXPROPID__FF100001",
+                                    "FieldName": "FF100001",
+                                    "PropertyName": "F100001",
+                                    "FieldType": 231,
+                                    "ElementType": 30,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_ASSISTANTDATA_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "含水"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Key": "FAUXPROPID__FF100002",
+                                    "FieldName": "FF100002",
+                                    "PropertyName": "F100002",
+                                    "FieldType": 231,
+                                    "ElementType": 30,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_ASSISTANTDATA_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "光度"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Key": "FAUXPROPID__FF100003",
+                                    "FieldName": "FF100003",
+                                    "PropertyName": "F100003",
+                                    "FieldType": 231,
+                                    "ElementType": 30,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_ASSISTANTDATA_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "直径"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Key": "FAUXPROPID__FF100004",
+                                    "FieldName": "FF100004",
+                                    "PropertyName": "F100004",
+                                    "FieldType": 231,
+                                    "ElementType": 30,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_ASSISTANTDATA_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "包装形式"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Key": "FAUXPROPID__FF100005",
+                                    "FieldName": "FF100005",
+                                    "PropertyName": "F100005",
+                                    "FieldType": 231,
+                                    "ElementType": 30,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_ASSISTANTDATA_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "散光"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Key": "FAUXPROPID__FF100006",
+                                    "FieldName": "FF100006",
+                                    "PropertyName": "F100006",
+                                    "FieldType": 231,
+                                    "ElementType": 30,
+                                    "MustInput": 0,
+                                    "LookUpObjectFormId": "BOS_ASSISTANTDATA_SELECT",
+                                    "Name": [
+                                        {
+                                            "Key": 2052,
+                                            "Value": "轴位"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "Key": "FAuxPropId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "辅助属性"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Secondary Property"
+                                }
+                            ],
+                            "FieldName": "FAUXPROPID",
+                            "PropertyName": "AuxPropId",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 60523,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 50,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FStockStatusId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存状态"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Inventory Status"
+                                }
+                            ],
+                            "FieldName": "FSTOCKSTATUSID",
+                            "PropertyName": "StockStatusID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 13,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "BD_StockStatus",
+                            "LookUpObjectID": "35146a03-85d5-479b-8a35-3d3cc24ce966",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FSecQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "库存量(库存辅单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Inventory Qty (SKU (AUoM))"
+                                }
+                            ],
+                            "FieldName": "FSECQTY",
+                            "PropertyName": "SecQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 22,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FExpiryDate",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "有效期至"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Valid till"
+                                }
+                            ],
+                            "FieldName": "FEXPIRYDATE",
+                            "PropertyName": "ExpiryDate",
+                            "FieldType": 61,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 4,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "2"
+                        },
+                        {
+                            "Key": "FBomId",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "BOM版本"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "BOM Version"
+                                }
+                            ],
+                            "FieldName": "FBOMID",
+                            "PropertyName": "BomID",
+                            "FieldType": 127,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 13,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": "ENG_BOM",
+                            "LookUpObjectID": "bb4cbb8c-414d-4f60-b725-2f3dbee21c04",
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "0"
+                        },
+                        {
+                            "Key": "FAVBQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "可用量(主单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Available Qty (CUoM))"
+                                }
+                            ],
+                            "FieldName": "FAVBQTY",
+                            "PropertyName": "AVBQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 22,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": false,
+                            "IsEditLock": false,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FBaseAVBQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "可用量(基本单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Available Qty (BUoM)"
+                                }
+                            ],
+                            "FieldName": "FBASEAVBQTY",
+                            "PropertyName": "BaseAVBQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 47,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FSecAVBQty",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "可用量(库存辅单位)"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Available Qty (SKU (AUoM))"
+                                }
+                            ],
+                            "FieldName": "FSECAVBQTY",
+                            "PropertyName": "SecAVBQty",
+                            "FieldType": 106,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 22,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": false,
+                            "IsEditLock": false,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FExpiryDays",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "到期天数"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Overdue Days"
+                                }
+                            ],
+                            "FieldName": "FEXPIRYDAYS",
+                            "PropertyName": "ExpiryDays",
+                            "FieldType": 56,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 3,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "1"
+                        },
+                        {
+                            "Key": "FUpdateTime",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "最后更新日期"
+                                },
+                                {
+                                    "Key": 1033,
+                                    "Value": "Last Updated"
+                                }
+                            ],
+                            "FieldName": "FUPDATETIME",
+                            "PropertyName": "FUpdateTime",
+                            "FieldType": 61,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 5,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": false,
+                            "IsEditVisible": false,
+                            "IsNewVisible": false,
+                            "IsNewLock": true,
+                            "IsEditLock": true,
+                            "Editlen": 0,
+                            "ConditionType": "2"
+                        },
+                        {
+                            "Key": "F_JYMJPH",
+                            "Name": [
+                                {
+                                    "Key": 2052,
+                                    "Value": "灭菌批号"
+                                }
+                            ],
+                            "FieldName": "F_JYMJPH",
+                            "PropertyName": "F_SHDL_Text",
+                            "FieldType": 231,
+                            "EntityKey": "FBillHead",
+                            "TableName": "T_STK_INVENTORY",
+                            "ElementType": 1,
+                            "MustInput": 0,
+                            "LookUpObjectFormId": null,
+                            "LookUpObjectID": null,
+                            "EnumObjectId": null,
+                            "Extends": null,
+                            "ControlFieldKey": null,
+                            "GroupFieldTableName": null,
+                            "DefValue": "",
+                            "IsViewVisible": true,
+                            "IsEditVisible": true,
+                            "IsNewVisible": true,
+                            "IsNewLock": false,
+                            "IsEditLock": false,
+                            "Editlen": 255,
+                            "ConditionType": "0"
+                        }
+                    ],
+                    "EntityType": "HeadEntity",
+                    "SeqFieldKey": null
+                }
+            ],
+            "Operations": [
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "Save",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "保存"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "None",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "None"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "ValidateUser",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "登录"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "BatchSave",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "批量保存"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "ExecuteBillQuery",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "单据查询"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "BillQuery",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "单据查询(json)"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "QueryBusinessInfo",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "元数据查询"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "WorkflowAudit",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "工作流审批"
+                        }
+                    ]
+                },
+                {
+                    "OperationId": 0,
+                    "OperationNumber": "SwitchOrg",
+                    "OperationName": [
+                        {
+                            "Key": 2052,
+                            "Value": "切换组织"
+                        }
+                    ]
+                }
+            ],
+            "MasterPKFieldName": null,
+            "PkFieldName": "FID",
+            "PkFieldType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+            "LinkSet": {
+                "IsNeedLinkTable": false,
+                "LinkEntitys": null
+            }
+        }
+    }
+}

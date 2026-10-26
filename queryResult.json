@@ -1,0 +1,46 @@
+[
+    {
+        "FStockId": 133673,
+        "FStockId.fname": "一厂模具库",
+        "FMaterialId": 4605911,
+        "FMaterialId.FNumber": "10600000559",
+        "FMaterialId.FName": "模具",
+        "FBaseQty": 1255000.0000000000
+    },
+    {
+        "FStockId": 133678,
+        "FStockId.fname": "模具中转仓-印色",
+        "FMaterialId": 4605911,
+        "FMaterialId.FNumber": "10600000559",
+        "FMaterialId.FName": "模具",
+        "FBaseQty": 0.0
+    },
+    {
+        "FStockId": 133681,
+        "FStockId.fname": "注塑中转仓",
+        "FMaterialId": 4605911,
+        "FMaterialId.FNumber": "10600000559",
+        "FMaterialId.FName": "模具",
+        "FBaseQty": 0.0
+    },
+    {
+        "FStockId": 5361306,
+        "FStockId.fname": "模具库-成品",
+        "FMaterialId": 4605911,
+        "FMaterialId.FNumber": "10600000559",
+        "FMaterialId.FName": "模具",
+        "FBaseQty": 0.0
+    }
+]
+
+
+{
+    "FormId": "STK_Inventory",
+    "FieldKeys": "FStockId,FStockId.fname,FMaterialId,FMaterialId.FNumber,FMaterialId.FName,FBaseQty",
+    "FilterString": "FMaterialId.FNumber = '10600000559'",
+    "OrderString": "",
+    "TopRowCount": 0,
+    "StartRow": 0,
+    "Limit": 2000,
+    "SubSystemId": ""
+}
